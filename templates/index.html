@@ -1,0 +1,59 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Travel Scheduler</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<h1>Travel Scheduler</h1>
+<form action="/" method="POST">
+<div class="form-group">
+<label for="origin">Origin:</label>
+<input type="text" class="form-control" id="origin" name="origin">
+</div>
+<div class="form-group">
+<label for="destination">Destination:</label>
+<input type="text" class="form-control" id="destination" name="destination">
+</div>
+<div class="form-group">
+<label for="travel-dates">Travel Dates:</label>
+<input type="text" class="form-control" id="travel-dates" name="travel-dates">
+</div>
+<div class="form-group">
+<label for="transport-types">Transport Types:</label>
+<div class="form-check">
+<input type="checkbox" class="form-check-input" id="transport-types-train" name="transport-types" value="train">
+<label class="form-check-label" for="transport-types-train">Train</label>
+</div>
+<div class="form-check">
+<input type="checkbox" class="form-check-input" id="transport-types-bus" name="transport-types" value="bus">
+<label class="form-check-label" for="transport-types-bus">Bus</label>
+</div>
+<div class="form-check">
+<input type="checkbox" class="form-check-input" id="transport-types-flight" name="transport-types" value="flight">
+<label class="form-check-label" for="transport-types-flight">Flight</label>
+</div>
+<div class="form-check">
+<input type="checkbox" class="form-check-input" id="transport-types-donkey" name="transport-types" value="donkey">
+<label class="form-check-label" for="transport-types-donkey">Donkey</label>
+</div>
+<div class="form-check">
+<input type="checkbox" class="form-check-input" id="transport-types-ferry" name="transport-types" value="ferry">
+<label class="form-check-label" for="transport-types-ferry">Ferry</label>
+</div>
+<div class="form-check">
+<input type="checkbox" class="form-check-input" id="transport-types-bike" name="transport-types" value="bike">
+<label class="form-check-label" for="transport-types-bike">Bike</label>
+</div>
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+</body>
+</html>
+
+
