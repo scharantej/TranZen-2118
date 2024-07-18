@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Travel Itinerary</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<h1>Travel Itinerary</h1>
+<table class="table">
+<thead>
+<tr>
+<th>Type</th>
+<th>Origin</th>
+<th>Destination</th>
+<th>Travel Time</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+{% for option in itinerary %}
+<tr>
+<td>{{ option['type'] }}</td>
+<td>{{ option['origin'] }}</td>
+<td>{{ option['destination'] }}</td>
+<td>{{ option['travel_time'] }}</td>
+<td>{{ option['cost'] }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+</body>
+</html>
+
